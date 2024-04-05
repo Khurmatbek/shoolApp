@@ -1,32 +1,24 @@
 import { createGlobalStyle } from "styled-components"
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 :root {
-
-
 @font-face {
   font-family: 'Gilroy-Light';
   src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
 }
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 body {
-  
 font-family: "Gilroy-Light", sans-serif;
 font-size: 16px;
 font-weight: 500;
   margin: 0;
   width: 100%;
 }
-/* .container{
-  max-width: 1280px;
+.container{
+  max-width: 1352px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-} */
+}
 body::selection{
   background-color: rgb(237, 85, 59);
   color: #000;
@@ -35,7 +27,6 @@ body::selection{
 .loader {
     width: 45px;
     aspect-ratio: 0.75;
-    --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
     background:
       var(--c) 0% 50%,
       var(--c) 50% 50%,
@@ -84,4 +75,3 @@ select{
   appearance: none;
 }
 `
-export default GlobalStyle;
