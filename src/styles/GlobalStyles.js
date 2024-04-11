@@ -6,6 +6,9 @@ export const GlobalStyle = createGlobalStyle`
   src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
 }
 }
+*{
+  box-sizing: border-box;
+}
 body {
 font-family: "Gilroy-Light", sans-serif;
 font-size: 16px;
@@ -69,6 +72,8 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 a{
+  display: block;
+  
   text-decoration:none;
 }
 select{

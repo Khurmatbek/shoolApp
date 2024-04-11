@@ -1,12 +1,17 @@
 import React from "react";
+import Header from "../../components/Header/Header";
+import InfoShool from "../../components/InfoSchool/InfoShool";
+import Statistic from "../../components/Statistic/Statistic";
+import CategorysSchool from "../../components/ExploreLearn/ExploreLearn";
 
 const Home = () => {
   return (
-    <div>
-          <header className="site-header">
-              
-      </header>
-    </div>
+    <>
+      <Header />
+      <InfoShool />
+      <Statistic />
+      <CategorysSchool/>
+    </>
   );
 };
 
