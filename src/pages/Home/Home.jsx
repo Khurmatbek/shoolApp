@@ -5,6 +5,7 @@ import Statistic from "../../components/Statistic/Statistic";
 import CategorysSchool from "../../components/ExploreLearn/ExploreLearn";
 import UseFull from "../../components/UseFull/UseFull";
 import Footer from "../../components/footer/Footer";
+import Location from "../../components/location/Location";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Statistic />
       <CategorysSchool />
       <UseFull />
+      <Location />
       <Footer />
     </>
   );
