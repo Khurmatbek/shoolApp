@@ -6,7 +6,8 @@ export const StatisticBox = styled.ul`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1085px;
+
+  min-width: 280px;
   width: 100%;
   margin: 0 auto;
   padding: 12px 23px;
@@ -14,6 +15,15 @@ export const StatisticBox = styled.ul`
   border-radius: 16px;
   border: 1px solid #1d2d5b;
   background-color: #f4f8ff;
+  @media (min-width: 320px) {
+    min-width: 280px;
+    width: 100%;
+    flex-direction: column;
+  }
+  @media (min-width: 756px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 export const StatisticItem = styled.li`
   display: flex;
