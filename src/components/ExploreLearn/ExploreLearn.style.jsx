@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 export const BoxWrapper = styled.div`
   padding-top: 58px;
+  padding-bottom: 30px;
 `;
 export const FirstTitle = styled.h3`
   margin: 0;
