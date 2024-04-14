@@ -56,9 +56,13 @@ const Location = () => {
                   Manzil: Toshkent 100084, Amir Temur shox ko‘chasi 108 uy
                 </StyledAddressItem>
                 <StyledAddressItem>
-                  Telefon: +998 71 238 64 15
+                  <span>Telefon:</span>{" "}
+                  <a href="tel:+998712386415">+998 71 238 64 15</a>
                 </StyledAddressItem>
-                <StyledAddressItem>E-mail: info@tuit.uz</StyledAddressItem>
+                <StyledAddressItem>
+                  <span>E-mail:</span>{" "}
+                  <a href="mailto:info@tuit.uz">info@tuit.uz</a>
+                </StyledAddressItem>
                 <StyledAddressItem>
                   Ish grafigi: Dushanba - Shanba 8:30 - 18:00
                 </StyledAddressItem>

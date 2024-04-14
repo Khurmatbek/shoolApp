@@ -20,6 +20,14 @@ export const StyledLinkLogo = styled.a`
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.64px;
+  transform: scale(1);
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
   @media (min-width: 320px) {
     margin-right: 0;
     font-size: 30px;
@@ -61,10 +69,19 @@ export const StyledSubList = styled.ul`
 `;
 export const StyledSubItem = styled.li``;
 export const StyledSubLink = styled.a`
-  color: #fff;
+  color: #ffffffde;
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
+  transform: scale(1);
+  transition: transform 0.3s linear, opacity 0.3s linear, color 0.1s linear;
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover {
+    transform: scale(1.1);
+    color: #fff;
+  }
 `;
 export const StyledHrLine = styled.span``;
 export const StyledAddress = styled.address``;

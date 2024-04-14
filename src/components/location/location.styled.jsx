@@ -20,6 +20,14 @@ export const StyledLogoIcon = styled.a`
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.64px;
+  transform: scale(1);
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
   @media (min-width: 320px) {
     margin-right: 0;
     font-size: 30px;
@@ -54,12 +62,21 @@ export const StyledLocationList = styled.ul`
   gap: 15px;
   padding: 0;
   list-style: none;
-`;
 export const StyledLocationItem = styled.li``;
+`;
 export const StyledLocationLink = styled.a`
   & svg {
     width: 32px;
     height: 32px;
+    transform: scale(1);
+    transition: all 0.3s linear;
+    &:hover {
+      fill: #ffdbb8;
+      transform: scale(1.1);
+      & path {
+        stroke: #1d2d5b;
+      }
+    }
   }
 `;
 export const StyledAddressText = styled.span`
@@ -77,8 +94,14 @@ export const StyledAddressList = styled.ul`
   padding-left: 15px;
 `;
 export const StyledAddressItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 16px;
   line-height: 20px;
+  & a {
+    text-decoration: none;
+  }
   /* width: 350px; */
 `;
 //for media
