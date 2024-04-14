@@ -62,8 +62,8 @@ export const StyledLocationList = styled.ul`
   gap: 15px;
   padding: 0;
   list-style: none;
-export const StyledLocationItem = styled.li``;
 `;
+export const StyledLocationItem = styled.li``;
 export const StyledLocationLink = styled.a`
   & svg {
     width: 32px;
