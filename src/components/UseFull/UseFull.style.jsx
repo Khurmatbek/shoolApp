@@ -17,6 +17,7 @@ export const HeadTitle = styled.h3`
 export const WrapperBox = styled.div`
   border-top: 2px solid #1d2d5b;
   border-bottom: 2px solid #1d2d5b;
+  padding: 10px;
 `;
 
 export const Links = styled(Link)`

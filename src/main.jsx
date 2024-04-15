@@ -10,3 +10,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <App />
   </RouterProvider>
 );
+
+/*
+footerdagi linklarni navlink qilin to propertyga to'gri route ko'rsatilishi kk
+
+*/
