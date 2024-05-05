@@ -71,7 +71,6 @@ export const StyledLocationLink = styled.a`
     transform: scale(1);
     transition: all 0.3s linear;
     &:hover {
-      fill: #ffdbb8;
       transform: scale(1.1);
       & path {
         stroke: #1d2d5b;
@@ -106,8 +105,9 @@ export const StyledAddressItem = styled.li`
 `;
 //for media
 export const StyledLocation = styled.section`
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f4f8ff;
   @media (max-width: 420px) {
     & ${StyledLocationWrapper} {
       align-items: center;

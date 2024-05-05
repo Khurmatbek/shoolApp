@@ -6,9 +6,8 @@ import ParticlesComponent from "./particles";
 function App() {
   return (
     <>
-      <ParticlesComponent id="particles" />
       <GlobalStyle />
-      <Home />
+      <Home/>
     </>
   );
 }

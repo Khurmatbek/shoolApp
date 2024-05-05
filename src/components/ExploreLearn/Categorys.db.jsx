@@ -13,13 +13,15 @@ export const CategorysObj = [
     info: " Qonunlar haqida ma'lumot olish uchun...",
     icon: <LuSchool className="icon" fontSize={30} color="#1d2d5b" />,
     decaration: <Strelka />,
+    path: "https://lex.uz/docs/-3137130",
   },
   {
     id: 2,
-    title: "O'qituvchilar",
-    info: " O'qituvchilar haqida ma'lumot olish uchun...",
+    title: "Emaktab",
+    info: " Emaktab haqida ma'limot olish uchun",
     icon: <GiTeacher className="icon" fontSize={30} color="#1d2d5b" />,
     decaration: <Strelka />,
+    path: "https://login.emaktab.uz/",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ export const CategorysObj = [
       <MdOutlineLeaderboard className="icon" fontSize={30} color="#1d2d5b" />
     ),
     decaration: <Strelka />,
+    path: "/iqtidorli",
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ export const CategorysObj = [
     info: " Tadbirlar haqida ma'lumot olish uchun...",
     icon: <GiTargetPrize className="icon" fontSize={30} color="#1d2d5b" />,
     decaration: <Strelka />,
+    path: "/tadbirlar",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const CategorysObj = [
     info: " To'garaklar haqida ma'lumot olish uchun...",
     icon: <FaDiscourse className="icon" fontSize={30} color="#1d2d5b" />,
     decaration: <Strelka />,
+    path: "/togaraklar",
   },
   {
     id: 6,
@@ -50,6 +55,7 @@ export const CategorysObj = [
     info: "Maktab haqida shorts videolar ko'rish uchun...",
     icon: <SiYoutubeshorts className="icon" fontSize={30} color="#1d2d5b" />,
     decaration: <Strelka />,
+    path: "/shorts",
   },
 ];
 export default CategorysObj;

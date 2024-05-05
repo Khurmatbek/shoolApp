@@ -11,7 +11,7 @@ import {
   StyledSubTitle,
 } from "./footer.styled";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <StyledFooter>
       <StyledContainer>

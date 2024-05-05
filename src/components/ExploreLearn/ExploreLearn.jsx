@@ -27,8 +27,10 @@ const CategorysSchool = () => {
         <ListInfo>
           {CategorysObj?.map((item) => {
             return (
-              <Item key={item.id}>
-                <LinkCategorys className="linkactive" to={"/"}>
+              <Item key={item.id} >
+                <LinkCategorys
+                  className="linkactive"
+                  to={item.path}>
                   {item.icon}
                   <Box>
                     <InBox>

@@ -6,6 +6,7 @@ import CategorysSchool from "../../components/ExploreLearn/ExploreLearn";
 import UseFull from "../../components/UseFull/UseFull";
 import Footer from "../../components/footer/Footer";
 import Location from "../../components/location/Location";
+import Work from "../../components/work/Work";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Statistic />
       <CategorysSchool />
       <UseFull />
+      <Work />
       <Location />
       <Footer />
     </>

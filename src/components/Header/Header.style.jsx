@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-/*  #1d2d5b --> color */
+/*  #fff --> color */
 export const HeaderStyle = styled.header`
-  padding: 38px 0 26.5px;
-  border-top: 1px solid #1d2d5b;
-  border-bottom: 1px solid #1d2d5b;
+  padding: 40px 0 26.5px;
+  border-bottom: 1px solid #fff;
+  background-color: #1d2d5b;
   @media (min-width: 30px) {
     display: none;
   }
@@ -14,9 +14,8 @@ export const HeaderStyle = styled.header`
     border: none;
   }
   @media (min-width: 1000px) {
-    padding: 28px 0;
-    border-top: 1px solid #1d2d5b;
-    border-bottom: 1px solid #1d2d5b;
+    padding: 40px 0;
+    border-bottom: 1px solid #fff;
     .MuiButtonBase-root,
     .none {
       display: none;
@@ -25,7 +24,7 @@ export const HeaderStyle = styled.header`
 `;
 export const SiteLogo = styled(Link)`
   margin-right: 32px;
-  color: ${(props) => props.$color || "#1d2d5b"};
+  color: ${(props) => props.$color || "#fff"};
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -84,7 +83,7 @@ export const Links = styled(Link)`
   align-items: center;
   gap: 7px;
   margin-left: 32px;
-  color: #252422;
+  color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -121,11 +120,12 @@ export const Select = styled.select`
   outline: none;
   appearance: none;
   background-color: transparent;
-  border-right: 2px solid #1d2d5b;
+  border-right: 2px solid #fff;
   font-size: 15px;
+  color:#fff;
 `;
 export const Option = styled.option`
-  color: #252422;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -133,7 +133,7 @@ export const Option = styled.option`
 `;
 export const BorderLink = styled(Link)`
   padding-right: 20px;
-  border-right: 2px solid #1d2d5b;
+  border-right: 2px solid #fff;
 `;
 export const LoginLink = styled(Link)`
   @media (min-width: 320px) {
@@ -149,13 +149,13 @@ export const LoginLink = styled(Link)`
     width: 131px;
     text-align: center;
     padding: 8px;
-    color: #fff;
+    color: #1d2d5b;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     border-radius: 4px;
-    background-color: #1d2d5b;
+    background-color: #fff;
   }
 `;
 /*  mobile */

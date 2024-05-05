@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   BorderLink,
@@ -20,7 +19,7 @@ import { IoNewspaper } from "react-icons/io5";
 import { MdPlayLesson } from "react-icons/md";
 import { RiSchoolLine } from "react-icons/ri";
 import Drawers from "../Drawer/Dreawer";
-const Header = () => {
+export const Header = ({ path }) => {
   return (
     <HeaderStyle>
       <div className="container">
@@ -29,28 +28,40 @@ const Header = () => {
             <SiteLogo to={"/"}>8School</SiteLogo>
             <Nav className="nav">
               <ListHeader>
-                <Items $left={"2px solid #1d2d5b "}>
-                  <Links to={"/"}>
-                    <GiTeacher color="#1d2d5b" />
+                <Items $left={"2px solid #fff "}>
+                  <Links
+                    to={"/rahbariyat"}
+                    style={{
+                      opacity: path === "/rahbariyat" ? "0.6" : "1",
+                    }}>
+                    <GiTeacher color="#fff" />
                     Rahbariyat
                   </Links>
                 </Items>
                 <Items>
-                  <Links to={"/"}>
-                    <IoNewspaper color="#1d2d5b" />
+                  <Links
+                    to={"https://t.me/emaktab_uz"}
+                    style={{
+                      opacity: path === "/yangiliklar" ? "0.6" : "1",
+                    }}>
+                    <IoNewspaper color="#fff" />
                     Yangiliklar
                   </Links>
                 </Items>
                 <Items>
-                  <Links to={"/"}>
-                    <MdPlayLesson color="#1d2d5b" />
+                  <Links
+                    to={"/online-lessons"}
+                    style={{
+                      opacity: path === "/online-lessons" ? "0.6" : "1",
+                    }}>
+                    <MdPlayLesson color="#fff" />
                     Online darslar
                   </Links>
                 </Items>
               </ListHeader>
             </Nav>
           </WrapperIn>
-          <ListHeader >
+          <ListHeader>
             <StyleItemForTriangle>
               <Select id="select">
                 <Option value="uz">UZ</Option>
@@ -60,7 +71,7 @@ const Header = () => {
             </StyleItemForTriangle>
             <li>
               <BorderLink to={"/"}>
-                <RiSchoolLine color="#1d2d5b" fontSize={20} />
+                <RiSchoolLine color="#fff" fontSize={20} />
               </BorderLink>
             </li>
             <li>

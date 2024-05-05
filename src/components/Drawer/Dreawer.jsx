@@ -53,7 +53,9 @@ export default function Drawers() {
         </NavItem>
         <NavItem>
           <IoNewspaper color="#fff" />
-          <LinkForHeaderNav to={"/yangiliklar"}>Yangiliklar</LinkForHeaderNav>
+          <LinkForHeaderNav to={"https://t.me/emaktab_uz"}>
+            Yangiliklar
+          </LinkForHeaderNav>
         </NavItem>
       </List>
       <Divider />
@@ -78,7 +80,7 @@ export default function Drawers() {
   return (
     <div className="none">
       <DrawerButton onClick={toggleDrawer(true)}>
-        <IoReorderThreeOutline fontSize={20} color="#fff" />
+        <IoReorderThreeOutline fontSize={31} color="#fff" />
       </DrawerButton>
       <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}

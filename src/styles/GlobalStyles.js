@@ -9,12 +9,29 @@ export const GlobalStyle = createGlobalStyle`
 *{
   box-sizing: border-box;
 }
+html{
+  height: 100vh;
+}
 body {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+margin: 0;
 font-family: "Gilroy-Light", sans-serif;
 font-size: 16px;
 font-weight: 500;
-  margin: 0;
-  width: 100%;
+height: 100vh;
+}
+#root{
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+height: 100vh;
+}
+main{
+  flex-grow: 1;
 }
 .container{
   max-width: 1352px;

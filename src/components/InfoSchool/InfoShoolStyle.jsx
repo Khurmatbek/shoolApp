@@ -9,7 +9,7 @@ export const ParentBox = styled.div`
     padding-bottom: 60px;
   }
   @media (min-width: 1000px) {
-    padding-top: 71px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 `;
