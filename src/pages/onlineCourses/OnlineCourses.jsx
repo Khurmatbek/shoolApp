@@ -85,21 +85,6 @@ const AboutWrapper = styled.div`
 `;
 const IframeDiv = styled.div`
   width: 60%;
-  & .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: #1d1c1c;
-    display: none;
-  }
-  & iframe {
-    transition: all 0.3s linear;
-  }
-  & iframe:hover {
-    scale: 1.1;
-  }
 `;
 const AboutStrong = styled.strong`
   font-size: 20px;
@@ -112,15 +97,12 @@ const AboutTextBox = styled.div`
   align-items: center;
   gap: 10px;
 `;
-const SocialsItem = styled.li`
-  border-right: 2px solid #2b70be;
-  &:not(.lastChild):last-child {
-    border-right: none;
-  }
-`;
+const SocialsItem = styled.li``;
 const SocialsWrapper = styled.ul`
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -192,6 +174,44 @@ const OnlineCourseSection = styled.section`
   & .container {
     width: 100%;
     height: 100%;
+  }
+  @media (max-width: 872px) {
+    ${WrapperItems} {
+      flex-wrap: wrap;
+      height: 100vh;
+      overflow-y: scroll;
+    }
+    & .firstItem {
+      width: 100%;
+
+      ${SubjectCategory} {
+        flex-direction: row;
+        flex-wrap: wrap;
+        ${SubjectItem} {
+          max-width: 150px;
+        }
+      }
+      ${SubjectBtn} {
+        width: 100%;
+      }
+    }
+    & .secondItem {
+      width: 100%;
+      flex-wrap: wrap;
+      ${AboutWrapper} {
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+      }
+
+      ${IframeDiv} {
+        width: 100%;
+      }
+    }
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
 `;
 
@@ -265,8 +285,8 @@ export const OnlineLessons = () => {
                     </SocialsItem>
                     <SocialsItem>
                       <SocialsLink className="youtube lastChild" href="#">
-                        <span>Youtube</span>
                         <FaYoutube />
+                        <span>Youtube</span>
                       </SocialsLink>
                     </SocialsItem>
                   </SocialsWrapper>

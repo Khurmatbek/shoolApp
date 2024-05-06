@@ -143,7 +143,7 @@ export const StyledFooter = styled.footer`
       width: 140px;
     }
   }
-  @media (min-width: 476px) and (max-width: 775px) {
+  @media (min-width: 476px) and (max-width: 810px) {
     & ${StyledFooterWrapper} {
       flex-direction: column;
       padding: 16px;
