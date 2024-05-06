@@ -1,0 +1,34 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.wrapperlikedislike {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 10px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+    color: red;
+}
+
+.active {
+    color: green;
+}
+.author{
+    margin: 0;
+    font-size: 10px;
+    width: 100%;
+    text-align: end;
+    opacity: 0.5;
+}
