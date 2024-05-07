@@ -7,11 +7,13 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import styled from "styled-components";
+import { FaBookReader } from "react-icons/fa";
 
 const subjectData = [
   {
     id: "1",
     subject: "matematika",
+    description: "Qoshish va ayirish haqida",
   },
   {
     id: "2",
@@ -34,7 +36,11 @@ const subjectData = [
 /* Styles with style Components */
 
 const ItemInner = styled.li`
-  padding: 24px;
+  padding: 24px ${(props) => props.$pl || "24px"} 24px
+    ${(props) => props.$pl || "24px"};
+  & .firstItem {
+    padding-left: 0;
+  }
 `;
 const SubjectCategory = styled.ul`
   display: flex;
@@ -78,32 +84,40 @@ const SubjectBtn = styled.button`
   }
 `;
 const AboutWrapper = styled.div`
-  width: 35%;
+  width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 `;
 const IframeDiv = styled.div`
   width: 60%;
 `;
 const AboutStrong = styled.strong`
-  font-size: 20px;
+  margin: 0;
+  font-size: 25px;
   text-align: center;
   display: block;
-  margin-bottom: 15px;
+  color: #1d2d5b;
 `;
 const AboutTextBox = styled.div`
   display: flex;
-  align-items: center;
+  align-items: start;
   gap: 10px;
+  & strong {
+    margin: 0;
+    color: #1d2d5b;
+  }
+  & small {
+    opacity: 0.9;
+  }
 `;
 const SocialsItem = styled.li``;
 const SocialsWrapper = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -150,10 +164,14 @@ const WrapperItems = styled.ul`
   & .firstItem {
     width: 25%;
     & h3 {
+      display: flex;
+      align-items: center;
+      gap: 7px;
       margin: 0;
       margin-bottom: 10px;
-      font-size: 24px;
-      letter-spacing: 0.8px;
+      font-size: 30px;
+      letter-spacing: 1px;
+      color: #1d2d5b;
     }
   }
   & .secondItem {
@@ -197,6 +215,7 @@ const OnlineCourseSection = styled.section`
     }
     & .secondItem {
       width: 100%;
+      height: 373px;
       flex-wrap: wrap;
       ${AboutWrapper} {
         width: 100%;
@@ -229,8 +248,11 @@ export const OnlineLessons = () => {
         <OnlineCourseSection>
           <div className="container">
             <WrapperItems>
-              <ItemInner className="firstItem">
-                <h3>Fanlar</h3>
+              <ItemInner $pl="0" className="firstItem">
+                <h3>
+                  <FaBookReader fontSize={25} />
+                  Fanlar
+                </h3>
                 <SubjectCategory>
                   {subjectData.map((item) => {
                     return (
@@ -240,8 +262,7 @@ export const OnlineLessons = () => {
                           onClick={(e) => {
                             console.log(e?.target?.id);
                           }}
-                          id={item.id}
-                        >
+                          id={item.id}>
                           {item.subject.substring(0, 1).toUpperCase() +
                             item.subject.slice(1)}
                           <FaArrowRightLong />
@@ -256,36 +277,45 @@ export const OnlineLessons = () => {
                   <iframe
                     width="100%"
                     height="100%"
+                    frameBorder={0}
                     src="https://www.youtube.com/embed/D9t2Zj1zYzc?si=fCOYqVaK8Y_dp3uO"
                     title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  ></iframe>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                   <div className="overlay"></div>
                 </IframeDiv>
                 <AboutWrapper>
                   <AboutStrong>Matematika</AboutStrong>
                   <AboutTextBox>
-                    <p>Ustoz</p> : <strong>Olloyorov Xurmatbek</strong>
+                    <strong className="teachervideodesc">Ustoz</strong> :{" "}
+                    <small>Olloyorov Xurmatbek</small>
                   </AboutTextBox>
                   <AboutTextBox>
-                    <p>Mavzu</p> : <strong>Qo'shish va ayirish amallari</strong>
+                    <strong>Mavzu</strong> :{" "}
+                    <small>Qo'shish va ayirish amallari</small>
+                  </AboutTextBox>
+                  <AboutTextBox>
+                    <strong>Description </strong> :
+                    <small>
+                      Qo'shish va ayirish amallarish haqida misollarni
+                      hisoblashni o'rganish va takrorlash
+                    </small>
                   </AboutTextBox>
                   <SocialsWrapper>
                     <SocialsItem>
                       <SocialsLink className="telegram" href="#">
-                        <FaTelegram />
+                        <FaTelegram fill="#2b70be" color="#2b70be" />
                         <span>Telegram</span>
                       </SocialsLink>
                     </SocialsItem>
                     <SocialsItem>
                       <SocialsLink className="instagram" href="#">
-                        <FaInstagram />
+                        <FaInstagram fill="#C73659" color="#C73659" />
                         <span>Instagram</span>
                       </SocialsLink>
                     </SocialsItem>
                     <SocialsItem>
                       <SocialsLink className="youtube lastChild" href="#">
-                        <FaYoutube />
+                        <FaYoutube fill="red" color="red" />
                         <span>Youtube</span>
                       </SocialsLink>
                     </SocialsItem>

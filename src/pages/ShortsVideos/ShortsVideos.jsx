@@ -5,13 +5,16 @@ import { GlobalStyle } from "../../styles/GlobalStyles";
 import { LikeDislikeButton } from "../../components/LikeDislike/LikeDislike";
 import {
   Desc,
+  Iframe,
   Item,
+  Left,
   Section,
   Title,
   TitleTop,
   Wrapper,
   WrapperText,
 } from "./ShortsVodeos.style";
+import { List } from "antd";
 
 export const ShortsVideos = () => {
   return (
@@ -20,29 +23,24 @@ export const ShortsVideos = () => {
       <Header />
       <main>
         <Section>
-          <div className="container">
+          <div className="">
             <Wrapper className="wrapper">
-              <TitleTop>Maktabimiz haqida qisqa videolar</TitleTop>
-              <ul>
-                <Item>
-                  <video width="300" height="350" controls autoFocus autoPlay>
-                    <source src="" type="video/mp4" />
-                  </video>
-                  <WrapperText>
-                    <Title>
-                      <strong>Title: </strong> Maktabdagi holat
-                    </Title>
-                    <Title>
-                      <strong>Description: </strong>
-                      <Desc>salom salom salom salom salom salom salom salo salom salom salom</Desc>
-                    </Title>
-                  </WrapperText>
-                  <WrapperText $top="5px">
-                    <LikeDislikeButton />
-                    <p className="author">Olloyorov Xurmatbek</p>
-                  </WrapperText>
-                </Item>
-              </ul>
+              <Left></Left>
+              <div>
+                <List>
+                  <Item>
+                    <Iframe
+                      width={280}
+                      height={550}
+                      frameBorder={0}
+                      src="https://www.youtube.com/embed/LIF874MgrU0"
+                      title="Maktab - Yangi qism (Pul uchun jigarlar)"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen=""></Iframe>
+                  </Item>
+                </List>
+              </div>
             </Wrapper>
           </div>
         </Section>

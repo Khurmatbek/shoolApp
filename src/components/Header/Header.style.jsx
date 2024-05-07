@@ -3,7 +3,6 @@ import styled from "styled-components";
 /*  #fff --> color */
 export const HeaderStyle = styled.header`
   padding: 40px 0 26.5px;
-  border-bottom: 1px solid #fff;
   background-color: #1d2d5b;
   @media (min-width: 30px) {
     display: none;
@@ -15,7 +14,6 @@ export const HeaderStyle = styled.header`
   }
   @media (min-width: 1000px) {
     padding: 40px 0;
-    border-bottom: 1px solid #fff;
     .MuiButtonBase-root,
     .none {
       display: none;
