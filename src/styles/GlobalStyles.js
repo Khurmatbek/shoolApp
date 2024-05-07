@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 :root {
 @font-face {
@@ -96,4 +96,4 @@ a{
 select{
   appearance: none;
 }
-`
+`;
