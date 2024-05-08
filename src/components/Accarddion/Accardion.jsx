@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { coursesData } from "../../pages/onlineCourses/onlineCourses.db";
 import styled from "styled-components";
-import "./Accardion.css";
 import { CiYoutube } from "react-icons/ci";
 import { PiTelegramLogo } from "react-icons/pi";
 
