@@ -40,6 +40,7 @@ export const Header = ({ path }) => {
                 </Items>
                 <Items>
                   <Links
+                    target="_blank"
                     to={"https://t.me/emaktab_uz"}
                     style={{
                       opacity: path === "/yangiliklar" ? "0.6" : "1",
@@ -50,6 +51,7 @@ export const Header = ({ path }) => {
                 </Items>
                 <Items>
                   <Links
+                    
                     to={"/online-lessons"}
                     style={{
                       opacity: path === "/online-lessons" ? "0.6" : "1",
@@ -70,7 +72,9 @@ export const Header = ({ path }) => {
               </Select>
             </StyleItemForTriangle>
             <li>
-              <BorderLink to={"/"}>
+              <BorderLink
+                target="_blank"
+                to={"https://sinaps.uz/bilasizmi/3904/"}>
                 <RiSchoolLine color="#fff" fontSize={20} />
               </BorderLink>
             </li>

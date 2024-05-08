@@ -5,6 +5,7 @@ import { SiYoutubeshorts } from "react-icons/si";
 import { FaDiscourse } from "react-icons/fa";
 import { GiTargetPrize } from "react-icons/gi";
 import { MdOutlineLeaderboard } from "react-icons/md";
+import { IoLibraryOutline } from "react-icons/io5";
 
 export const CategorysObj = [
   {
@@ -51,11 +52,11 @@ export const CategorysObj = [
   },
   {
     id: 6,
-    title: "Shorts",
-    info: "Maktab haqida shorts videolar ko'rish uchun...",
-    icon: <SiYoutubeshorts className="icon" fontSize={30} color="#1d2d5b" />,
+    title: "Online Kitoblar",
+    info: "Elektron kutbxona orqali kitoblarni o'qishingiz mumkin..",
+    icon: <IoLibraryOutline className="icon" fontSize={30} color="#1d2d5b" />,
     decaration: <Strelka />,
-    path: "/shorts",
+    path: "https://unilibrary.uz/",
   },
 ];
 export default CategorysObj;
