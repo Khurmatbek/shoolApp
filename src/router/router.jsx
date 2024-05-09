@@ -5,6 +5,7 @@ import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
 import { TalantStudent } from "../pages/TalantStudent/TalantStudent";
 import { Coursers } from "../pages/Coursers/Coursers";
 import OnlineCourses from "../pages/onlineCourses/onlineCourses";
+import Tadbirlar from "../pages/Tadbirlar/Tadbirlar";
 export const router = createBrowserRouter([
   {
     path: "*",
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/online-lessons",
-    element: <OnlineCourses/>,
+    element: <OnlineCourses />,
+  },
+  {
+    path: "/tadbirlar",
+    element: <Tadbirlar/>,
   },
 ]);
