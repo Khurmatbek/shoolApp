@@ -25,20 +25,27 @@ export const HeaderStyle = styled.header`
   }
 `;
 export const SiteLogo = styled(Link)`
-  margin-right: 32px;
-  color: ${(props) => props.$color || "#fff"};
-  font-size: 32px;
+  color: #fff;
+  font-size: 52px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.64px;
+  transform: scale(1);
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
   @media (min-width: 320px) {
     margin-right: 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
   }
   @media (min-width: 1000px) {
-    font-size: 32px;
+    font-size: 42px;
     margin-right: 32px;
     font-style: normal;
     font-weight: 700;

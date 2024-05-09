@@ -10,7 +10,7 @@ export const StatisticBox = styled.ul`
   min-width: 280px;
   width: 100%;
   margin: 0 auto;
-  padding: 12px 23px;
+  padding: 12px 20px;
   list-style: none;
   border-radius: 16px;
   border: 1px solid #1d2d5b;
@@ -35,6 +35,8 @@ export const StatisticItem = styled.li`
   padding: 20px;
 `;
 export const Numbers = styled.strong`
+  display: flex;
+  align-items: center;
   margin: 0;
   margin-bottom: 10px;
   color: #1d2d5b;

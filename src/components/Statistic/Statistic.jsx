@@ -18,7 +18,7 @@ const Statistic = () => {
         </StatisticItem>
         <StatisticItem>
           <Numbers>
-            {" "}
+          
             <CountUp end={1000} duration={4}>
               1000
             </CountUp>
@@ -29,7 +29,7 @@ const Statistic = () => {
         <StatisticItem>
           <Numbers>
             4.8
-            <FaStar fontSize={28} />
+            <FaStar fontSize={25} />
           </Numbers>
           <Desc>Rating</Desc>
         </StatisticItem>

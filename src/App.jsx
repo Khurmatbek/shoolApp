@@ -8,7 +8,6 @@ function App() {
     <>
       <ParticlesComponent id="particles" />
       <GlobalStyle />
-
       <Home />
     </>
   );
