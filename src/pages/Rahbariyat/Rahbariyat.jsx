@@ -28,6 +28,7 @@ export const Rahbariyat = () => {
 
   return (
     <>
+      <ParticlesComponent id="particles" />
       <GlobalStyle />
       <Header path={path} />
       <Main>

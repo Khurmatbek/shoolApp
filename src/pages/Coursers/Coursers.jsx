@@ -8,19 +8,26 @@ import Swiper from "swiper";
 import "swiper/css";
 import CourseCard from "../../components/CourseCard/CourseCard";
 import styled from "styled-components";
+import { TitleTadbirlar } from "../Tadbirlar/Tadbirlar.style";
+import { BiSolidVideos } from "react-icons/bi";
+import ParticlesComponent from "../../particles";
 const Section = styled.section`
-  padding: 50px 0;
+  margin-top: 120px;
+  padding-bottom:50px ;
 `;
 export const Coursers = () => {
   return (
     <>
+      <ParticlesComponent id="particles" />
       <GlobalStyle />
       <Header />
       <main>
         <Section>
           <div className="container">
-            <h2>Maktabimizda mavjud bo'lgan to'garaklar to'plami</h2>
-
+            <TitleTadbirlar style={{ marginBottom: "20px" }}>
+              <BiSolidVideos fontSize={25} />
+              Maktabimizda mavjud bo'lgan to'garaklar to'plami
+            </TitleTadbirlar>
             <CourseCard />
           </div>
         </Section>

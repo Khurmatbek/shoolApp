@@ -18,6 +18,22 @@ const TeacherArr = [
       "FrontEnd kurslari 6 oy davomida o'rgatiladi.Siz kurs davomida HTML, CSS,SASS, LASS, GIT , GIT HUB, GIT LAB, BOOTSTRAP,TAILWIND CSS, JAVASCRIPT , REACT JS larni o'rganasiz..",
     posterImg: "teacher1.png",
   },
+  {
+    id: 3,
+    name: "Olloyorov Xurmatbek",
+    desc: "Web dasturlashdan chuqurlashtrilgan kurslarimga taklif etib qolaman",
+    content:
+      "FrontEnd kurslari 6 oy davomida o'rgatiladi.Siz kurs davomida HTML, CSS,SASS, LASS, GIT , GIT HUB, GIT LAB, BOOTSTRAP,TAILWIND CSS, JAVASCRIPT , REACT JS larni o'rganasiz..",
+    posterImg: "teacher1.png",
+  },
+  {
+    id: 4,
+    name: "Olloyorov Xurmatbek",
+    desc: "Web dasturlashdan chuqurlashtrilgan kurslarimga taklif etib qolaman",
+    content:
+      "FrontEnd kurslari 6 oy davomida o'rgatiladi.Siz kurs davomida HTML, CSS,SASS, LASS, GIT , GIT HUB, GIT LAB, BOOTSTRAP,TAILWIND CSS, JAVASCRIPT , REACT JS larni o'rganasiz..",
+    posterImg: "teacher1.png",
+  },
 ];
 const data = TeacherArr.map((item) => ({
   href: "https://t.me/ministry_me",

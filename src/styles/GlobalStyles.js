@@ -22,6 +22,8 @@ font-family: "Gilroy-Light", sans-serif;
 font-size: 16px;
 font-weight: 500;
 height: 100vh;
+background-color: #fafafa;
+
 }
 #root{
   display: flex;

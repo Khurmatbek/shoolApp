@@ -4,7 +4,7 @@ export const Main = styled.main`
   background-color: #f4f8ff;
 `;
 export const Section = styled.section`
-  padding: 50px 0;
+  padding: 150px 0 50px 0;
 `;
 export const List = styled.ul`
   display: flex;

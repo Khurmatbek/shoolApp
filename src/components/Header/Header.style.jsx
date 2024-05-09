@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 /*  #fff --> color */
 export const HeaderStyle = styled.header`
-  padding: 40px 0 26.5px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 30px 0 26.5px;
   background-color: #1d2d5b;
   @media (min-width: 30px) {
     display: none;
@@ -13,7 +17,7 @@ export const HeaderStyle = styled.header`
     border: none;
   }
   @media (min-width: 1000px) {
-    padding: 40px 0;
+    padding: 30px 0;
     .MuiButtonBase-root,
     .none {
       display: none;
@@ -120,7 +124,7 @@ export const Select = styled.select`
   background-color: transparent;
   border-right: 2px solid #fff;
   font-size: 15px;
-  color:#fff;
+  color: #fff;
 `;
 export const Option = styled.option`
   color: #fff;
