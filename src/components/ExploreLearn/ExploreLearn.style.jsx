@@ -87,6 +87,7 @@ export const LinkCategorys = styled(Link)`
   }
   &:hover .icon {
     fill: #fff !important;
+    stroke: #fff;
   }
   &:hover .strelka path {
     stroke: #fff;

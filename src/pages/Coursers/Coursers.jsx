@@ -1,9 +1,9 @@
-import React from "react";
+// import React from "react";
 import Header from "../../components/Header/Header";
-import CardItem from "../../components/CardItem/CardItem";
+// import CardItem from "../../components/CardItem/CardItem";
 import Footer from "../../components/footer/Footer";
 import { GlobalStyle } from "../../styles/GlobalStyles";
-import Swiper from "swiper";
+// import Swiper from "swiper";
 // import Swiper styles
 import "swiper/css";
 import CourseCard from "../../components/CourseCard/CourseCard";
@@ -24,10 +24,14 @@ export const Coursers = () => {
       <main>
         <Section>
           <div className="container">
+
             <TitleTadbirlar style={{ marginBottom: "20px" }}>
               <BiSolidVideos fontSize={25} />
               Maktabimizda mavjud bo'lgan to'garaklar to'plami
             </TitleTadbirlar>
+
+            <h2>{"Maktabimizda mavjud bo'lgan to'garaklar to'plami"}</h2>
+
             <CourseCard />
           </div>
         </Section>

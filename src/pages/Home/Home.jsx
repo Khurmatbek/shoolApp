@@ -7,6 +7,9 @@ import UseFull from "../../components/UseFull/UseFull";
 import Footer from "../../components/footer/Footer";
 import Location from "../../components/location/Location";
 import Work from "../../components/work/Work";
+import TableEvent from "../../components/events/TableEvent";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "../../theme/theme";
 
 const Home = () => {
   return (
@@ -17,6 +20,9 @@ const Home = () => {
       <CategorysSchool />
       <UseFull />
       <Work />
+      <ChakraProvider theme={theme}>
+        <TableEvent />
+      </ChakraProvider>
       <Location />
       <Footer />
     </>
