@@ -17,6 +17,7 @@ export const ImageDiv = styled.div`
   background-size: 100%;
   transition: all 0.5s linear;
 `;
+// created by Murod Shernazaroff
 export const WrapperEventContent = styled.div`
   padding: 20px;
 `;
