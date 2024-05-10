@@ -92,13 +92,19 @@ export const Links = styled(Link)`
   align-items: center;
   gap: 7px;
   margin-left: 32px;
+  padding-bottom: 5px;
   color: #fff;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+  border-bottom: 1px solid transparent;
+  transition: transform 0.3s linear, opacity 0.3s linear,
+    border-bottom 0.5s ease-in-out;
   &:hover {
+    border-color: #fff;
+    transform: scale(1.1);
     opacity: 0.8;
   }
 `;
@@ -143,6 +149,9 @@ export const Option = styled.option`
 export const BorderLink = styled(Link)`
   padding-right: 20px;
   border-right: 2px solid #fff;
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 export const LoginLink = styled(Link)`
   @media (min-width: 320px) {
@@ -158,13 +167,51 @@ export const LoginLink = styled(Link)`
     width: 131px;
     text-align: center;
     padding: 8px;
-    color: #1d2d5b;
+    color: #fff;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    border-radius: 4px;
-    background-color: #fff;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: gainsboro;
+    border-radius: 50%;
+    transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+    top: calc(50% - 0.6em / 2);
+  }
+
+  &::before {
+    left: 0;
+    z-index: -1;
+  }
+  &::after {
+    right: 0;
+    z-index: -2;
+  }
+  position: relative;
+  transition: 0.5s;
+
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: dodgerblue;
+  }
+
+  &:hover::before {
+    top: 0;
+  }
+
+  &:hover::after {
+    right: -0.4em;
+    filter: brightness(0.8);
   }
 `;
 /*  mobile */
