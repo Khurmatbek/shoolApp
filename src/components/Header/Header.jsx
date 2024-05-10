@@ -20,6 +20,7 @@ import { MdPlayLesson } from "react-icons/md";
 import { RiSchoolLine } from "react-icons/ri";
 import Drawers from "../Drawer/Dreawer";
 export const Header = ({ path }) => {
+  console.log(path)
   return (
     <HeaderStyle>
       <div className="container">
@@ -51,7 +52,6 @@ export const Header = ({ path }) => {
                 </Items>
                 <Items>
                   <Links
-                    
                     to={"/online-lessons"}
                     style={{
                       opacity: path === "/online-lessons" ? "0.6" : "1",

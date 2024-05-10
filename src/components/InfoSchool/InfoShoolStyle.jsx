@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ParentBox = styled.div`
-  padding-top: 71px;
+  margin-top: 80px;
   padding-bottom: 100px;
   @media (min-width: 320px) {
     padding-top: 30px;

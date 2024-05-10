@@ -1,10 +1,13 @@
 import styled from "styled-components";
-
+export const Section = styled.section`
+  padding: 130px 0;
+`;
 export const ParentList = styled.ul`
   display: flex;
   align-items: center;
   gap: 20px;
   justify-content: space-between;
+  margin: 0;
   padding: 0;
   list-style: none;
 
@@ -18,7 +21,7 @@ export const ParentList = styled.ul`
   }
   @media (min-width: 1000px) {
     flex-direction: column;
-    padding: 100px 0;
+
   }
 `;
 export const List = styled.ul`

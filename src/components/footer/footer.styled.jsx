@@ -9,11 +9,10 @@ export const StyledContainer = styled.div`
 export const StyledFooterWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 40px 30px;
+  justify-content: space-between;
+
 `;
 export const StyledLinkLogo = styled.a`
-  margin-left: 32px;
   color: #fff;
   font-size: 52px;
   font-style: normal;
@@ -90,7 +89,7 @@ export const StyledAddressText = styled.span``;
 //for media
 
 export const StyledFooter = styled.footer`
-  padding-top: 26px;
+  padding: 40px 30px;
   background-color: #1d2d5b;
 
   @media (max-width: 420px) {

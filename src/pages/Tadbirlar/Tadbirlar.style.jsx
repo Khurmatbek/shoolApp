@@ -1,7 +1,28 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  padding: 50px 0;
+  padding: 150px 0 50px 0;
+`;
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+`;
+export const TitleTadbirlar = styled.h3`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 30px;
+  color: #1d2d5b;
+  @media (min-width: 320px) {
+    font-size: 20px;
+  }
+    @media (min-width: 820px) {
+    font-size: 30px;
+  }
 `;
 export const List = styled.ul`
   width: 100%;
@@ -66,8 +87,8 @@ export const List = styled.ul`
       width: 100%;
       gap: 24px;
     }
-    .rightItem{
-        gap: 22px;
+    .rightItem {
+      gap: 22px;
     }
   }
   @media (min-width: 1110px) {
@@ -165,4 +186,14 @@ export const Img = styled.img`
     width: 100%;
     height: 300px;
   }
+`;
+
+export const TitleCourse = styled.h3`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  margin: 20px 0;
+  font-size: 25px;
+  color: #1d2d5b;
 `;

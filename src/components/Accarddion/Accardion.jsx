@@ -48,7 +48,7 @@ export default function AccordionExpandDefault() {
           <Accordion
             key={item.id}
             style={{
-              backgroundColor: "#fafafa",
+              backgroundColor: "#fff",
               color: "#1d2d5b",
             }}
             defaultExpanded>

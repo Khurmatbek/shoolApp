@@ -9,7 +9,7 @@ export const ErrorPage = () => {
       <GlobalStyle />
       <Header />
       <main>
-        <section>Page Not Found</section>
+        <section style={{marginTop:"50px"}}>Page Not Found</section>
       </main>
       <Footer />
     </>

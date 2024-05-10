@@ -5,6 +5,7 @@ import { GlobalStyle } from "../../styles/GlobalStyles";
 import { MdAccessTime } from "react-icons/md";
 import { ImYoutube2 } from "react-icons/im";
 import { GiFlowers } from "react-icons/gi";
+import { CgMonday } from "react-icons/cg";
 import {
   Desc,
   Img,
@@ -14,18 +15,26 @@ import {
   Time,
   TimeBox,
   Title,
+  TitleTadbirlar,
   TubeLink,
+  Wrapper,
 } from "./Tadbirlar.style";
 import { TadbirlarArr } from "./tadbirlar.db";
+import ParticlesComponent from "../../particles";
 const Tadbirlar = () => {
   return (
     <>
+      <ParticlesComponent id="particles" />
       <GlobalStyle />
       <Header />
       <main>
         <Section>
           <div className="container">
-            <div className="wrapper">
+            <Wrapper className="wrapper">
+              <TitleTadbirlar>
+                <CgMonday fontSize={25} />
+                Tadbirlar ro'yhati
+              </TitleTadbirlar>
               <List $column="column">
                 {TadbirlarArr.map((item) => {
                   return (
@@ -62,7 +71,7 @@ const Tadbirlar = () => {
                   );
                 })}
               </List>
-            </div>
+            </Wrapper>
           </div>
         </Section>
       </main>

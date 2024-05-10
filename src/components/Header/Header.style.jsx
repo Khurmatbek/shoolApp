@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 /*  #fff --> color */
 export const HeaderStyle = styled.header`
-  padding: 40px 0 26.5px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  padding: 30px 0 26.5px;
   background-color: #1d2d5b;
   @media (min-width: 30px) {
     display: none;
@@ -13,7 +17,7 @@ export const HeaderStyle = styled.header`
     border: none;
   }
   @media (min-width: 1000px) {
-    padding: 40px 0;
+    padding: 30px 0;
     .MuiButtonBase-root,
     .none {
       display: none;
@@ -21,20 +25,27 @@ export const HeaderStyle = styled.header`
   }
 `;
 export const SiteLogo = styled(Link)`
-  margin-right: 32px;
-  color: ${(props) => props.$color || "#fff"};
-  font-size: 32px;
+  color: #fff;
+  font-size: 52px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.64px;
+  transform: scale(1);
+  transition: transform 0.3s linear, opacity 0.3s linear;
+  &:active {
+    opacity: 0.8;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
   @media (min-width: 320px) {
     margin-right: 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
   }
   @media (min-width: 1000px) {
-    font-size: 32px;
+    font-size: 42px;
     margin-right: 32px;
     font-style: normal;
     font-weight: 700;
@@ -120,7 +131,7 @@ export const Select = styled.select`
   background-color: transparent;
   border-right: 2px solid #fff;
   font-size: 15px;
-  color:#fff;
+  color: #fff;
 `;
 export const Option = styled.option`
   color: #fff;
