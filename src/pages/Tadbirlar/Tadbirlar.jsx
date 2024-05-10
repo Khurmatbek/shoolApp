@@ -36,12 +36,11 @@ const Tadbirlar = () => {
                             style={{
                               borderRadius: "10px",
                             }}
-                           
                             src={item.img}
                             alt={item.desc}
                           />
                         </Item>
-                              <Item className="rightItem"          $padding="10px">
+                        <Item className="rightItem" $padding="10px">
                           <Title>
                             <GiFlowers />
                             {item.title}
