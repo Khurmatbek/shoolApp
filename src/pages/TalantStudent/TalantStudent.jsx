@@ -4,6 +4,10 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/footer/Footer";
 import { GlobalStyle } from "../../styles/GlobalStyles";
 import ParticlesComponent from "../../particles";
+import styled from "styled-components";
+const Section = styled.section`
+  padding: 75px 0;
+`;
 
 export const TalantStudent = () => {
   return (
@@ -12,9 +16,9 @@ export const TalantStudent = () => {
       <GlobalStyle />
       <Header />
       <main>
-        <section>
+        <Section>
           <Work />
-        </section>
+        </Section>
       </main>
       <Footer />
     </>

@@ -6,6 +6,7 @@ export const WrapperEventImage = styled.div`
   width: 280px;
   height: 240px;
   overflow: hidden;
+  border-radius: 12px;
 `;
 export const ImageDiv = styled.div`
   position: absolute;
@@ -14,6 +15,7 @@ export const ImageDiv = styled.div`
   right: 0;
   bottom: 0;
   background: ${(props) => props.background};
+  border-radius: 12px;
   background-size: 100%;
   transition: all 0.5s linear;
 `;
@@ -49,6 +51,7 @@ export const TextStrong = styled.strong`
 export const WrapperEvent = styled.div`
   display: inline-block;
   border: 1px solid transparent;
+  border-radius: 12px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 0.3s linear;
 
@@ -63,18 +66,48 @@ export const WrapperEvent = styled.div`
   }
 `;
 export const TitleH3 = styled.h3`
-  text-align: center;
-  font-size: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: start;
+  font-size: 45px;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #1d2d5b;
+  @media (min-width: 320px) {
+    font-size: 25px;
+  }
+  @media (min-width: 760px) {
+    font-size: 35px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 45px;
+  }
 `;
 export const WrapperLayout = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 25px;
   flex-wrap: wrap;
+  @media (min-width: 320px) {
+    justify-content: center;
+  }
+  @media (min-width: 1250px) {
+    justify-content: space-between;
+  }
 `;
 export const SectionEvent = styled.section`
-  margin-bottom: 50px;
+  padding: 100px 0;
+  @media (min-width: 320px) {
+    padding: 30px 0;
+  }
+  @media (min-width: 760px) {
+    padding: 50px 0;
+  }
+  @media (min-width: 1200px) {
+    padding: 100px 0;
+  }
 `;

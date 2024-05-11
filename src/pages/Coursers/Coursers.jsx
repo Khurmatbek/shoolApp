@@ -26,12 +26,9 @@ export const Coursers = () => {
           <div className="container">
 
             <TitleTadbirlar style={{ marginBottom: "20px" }}>
-              <BiSolidVideos fontSize={25} />
+              <BiSolidVideos  />
               Maktabimizda mavjud bo'lgan to'garaklar to'plami
             </TitleTadbirlar>
-
-            <h2>{"Maktabimizda mavjud bo'lgan to'garaklar to'plami"}</h2>
-
             <CourseCard />
           </div>
         </Section>

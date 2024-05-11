@@ -6,17 +6,20 @@ export const BoxWrapper = styled.div`
 `;
 export const FirstTitle = styled.h3`
   margin: 0;
-  color: #252422;
-  font-size: 50px;
+  color: #1d2d5b;
+  font-size: 45px;
   font-style: normal;
   font-weight: 600;
   line-height: 113.3%; /* 56.65px */
   letter-spacing: -1px;
   @media (min-width: 320px) {
+    font-size: 30px;
+  }
+  @media (min-width: 760px) {
     font-size: 40px;
   }
-  @media (min-width: 320px) {
-    font-size: 50px;
+  @media (min-width: 1100px) {
+    font-size: 45px;
   }
 `;
 export const SmallDesc = styled.p`

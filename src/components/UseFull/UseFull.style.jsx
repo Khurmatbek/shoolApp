@@ -7,17 +7,25 @@ export const HeadTitle = styled.h3`
   justify-content: center;
   gap: 10px;
   margin: 0;
-  margin-top: 30px;
-  color: #1c1c1c;
-  font-size: 35px;
+  color: #1d2d5b;
+  font-size: 45px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 24px;
+  @media (min-width: 320px) {
+    font-size: 25px;
+  }
+  @media (min-width:1000px)
+  {
+    font-size: 30px;
+  }
+  @media (min-width:1200px){
+    font-size: 45px;
+  }
 `;
 export const WrapperBox = styled.div`
   border-top: 2px solid #1d2d5b;
   border-bottom: 2px solid #1d2d5b;
-  padding: 10px;
+  padding: 35px 10px 50px;
 `;
 
 export const Links = styled(Link)`

@@ -1,6 +1,13 @@
 import styled from "styled-components";
 export const Section = styled.section`
-  padding: 130px 0;
+  padding: 90px 0;
+  @media (min-width:320px){
+    padding: 30px 0;
+  }
+  @media (min-width:1000px)
+  {
+    padding: 90px 0;
+  }
 `;
 export const ParentList = styled.ul`
   display: flex;
@@ -56,13 +63,16 @@ export const Item = styled.li`
 `;
 export const Name = styled.h3`
   margin: 0;
-  color: #252422;
+  color: #1d2d5b;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   @media (min-width: 320px) {
     font-size: 26px;
+  }
+  @media (min-width: 768px) {
+    font-size: 30px;
   }
 `;
 export const Info = styled.p`
