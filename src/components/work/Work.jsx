@@ -1,4 +1,12 @@
-import { Img, Info, Item, List, Name, ParentList, Section } from "./work.styled";
+import {
+  Img,
+  Info,
+  Item,
+  List,
+  Name,
+  ParentList,
+  Section,
+} from "./work.styled";
 import "./work.db";
 import { WorksArray } from "./work.db";
 import { TitleTadbirlar } from "../../pages/Tadbirlar/Tadbirlar.style";
@@ -11,8 +19,8 @@ export const Work = () => {
       <div className="container">
         <div className="wrapper">
           <TitleTadbirlar>
-            <GiTrophyCup  />
-             Iqtidorli o'quvchilarimiz!
+            <GiTrophyCup />
+            {"Iqtidorli o'quvchilarimiz!"}
           </TitleTadbirlar>
           <ParentList id="iqtidorli">
             {WorksArray.map((kind) => {
@@ -21,7 +29,8 @@ export const Work = () => {
                   <List
                     className="reverselist"
                     $row="row"
-                    $reverse="row-reverse">
+                    $reverse="row-reverse"
+                  >
                     <Item>
                       <Img
                         width={550}
