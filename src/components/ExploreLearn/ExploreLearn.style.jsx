@@ -78,9 +78,13 @@ export const LinkCategorys = styled(Link)`
   gap: 28px;
   border-radius: 16px;
   border: 1px solid var(--Primary-Lighten, #1d2d5b);
-  transition: background-color 0.6s linear;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.5s ease-in-out;
   &:hover {
+    transform: scale(1.1);
     background-color: #1d2d5b;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   }
   &:hover .titleactive {
     color: #fff;
