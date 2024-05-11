@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const StyledLocationWrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 24px;
+  justify-content: space-between;
   gap: 10px;
 `;
 export const StyledLocationInner = styled.div`
@@ -111,7 +110,7 @@ export const StyledLocation = styled.section`
   @media (max-width: 420px) {
     & ${StyledLocationWrapper} {
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       flex-direction: column;
       padding: 24px;
       gap: 10px;

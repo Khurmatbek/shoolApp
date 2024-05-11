@@ -11,7 +11,7 @@ export const Work = () => {
       <div className="container">
         <div className="wrapper">
           <TitleTadbirlar>
-            <GiTrophyCup fontSize={25} />
+            <GiTrophyCup  />
              Iqtidorli o'quvchilarimiz!
           </TitleTadbirlar>
           <ParentList id="iqtidorli">

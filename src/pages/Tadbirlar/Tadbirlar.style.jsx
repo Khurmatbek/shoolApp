@@ -15,13 +15,16 @@ export const TitleTadbirlar = styled.h3`
   align-items: center;
   gap: 8px;
   margin: 0;
-  font-size: 30px;
+  font-size: 45px;
   color: #1d2d5b;
   @media (min-width: 320px) {
-    font-size: 20px;
+    font-size: 28px;
   }
     @media (min-width: 820px) {
     font-size: 30px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 45px;
   }
 `;
 export const List = styled.ul`
@@ -194,6 +197,15 @@ export const TitleCourse = styled.h3`
   gap: 8px;
   margin: 0;
   margin: 20px 0;
-  font-size: 25px;
+  font-size: 45px;
   color: #1d2d5b;
+  @media (min-width:320px){
+    font-size: 25px;
+  }
+  @media (min-width:760px){
+    font-size: 30px;
+  }
+  @media (min-width:1200px){
+    font-size: 45px;
+  }
 `;

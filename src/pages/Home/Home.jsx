@@ -7,6 +7,7 @@ import Footer from "../../components/footer/Footer";
 import Location from "../../components/location/Location";
 import Work from "../../components/work/Work";
 import EventLayout from "../../components/events/EventLayout";
+import ApexChart from "../../components/ApexChart/ApexChart";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <CategorysSchool />
       <UseFull />
       <Work />
+      <ApexChart />
       <EventLayout />
       <Location />
       <Footer />

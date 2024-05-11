@@ -1,11 +1,16 @@
 import { SectionEvent, TitleH3, WrapperLayout } from "./eventCard.styled";
 import { events } from "./event.db";
 import EventCard from "./EventCard";
+import { BiNews } from "react-icons/bi";
 const EventLayout = () => {
   return (
     <SectionEvent>
       <div className="container">
-        <TitleH3>Yaqin kundagi tadbirlar</TitleH3>
+        <TitleH3>
+          {" "}
+          <BiNews />
+          Maktabimizda bugun...
+        </TitleH3>
         <WrapperLayout>
           {events &&
             events.map((item) => {

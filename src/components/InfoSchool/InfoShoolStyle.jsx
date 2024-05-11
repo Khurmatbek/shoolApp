@@ -46,7 +46,7 @@ export const Item = styled.li`
 `;
 export const Title = styled.h2`
   margin: 0;
-  color: #252422;
+  color: #1d2d5b;
   font-size: 61px;
   font-style: normal;
   font-weight: 700;
