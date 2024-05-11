@@ -6,6 +6,7 @@ import { TalantStudent } from "../pages/TalantStudent/TalantStudent";
 import { Coursers } from "../pages/Coursers/Coursers";
 import OnlineCourses from "../pages/onlineCourses/onlineCourses";
 import Tadbirlar from "../pages/Tadbirlar/Tadbirlar";
+/*  routes part */
 export const router = createBrowserRouter([
   {
     path: "*",
