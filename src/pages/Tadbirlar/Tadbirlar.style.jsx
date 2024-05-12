@@ -13,18 +13,21 @@ export const Wrapper = styled.div`
 export const TitleTadbirlar = styled.h3`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin: 0;
-  font-size: 45px;
+  margin-bottom: 25px;
+  font-size: 40px;
   color: #1d2d5b;
   @media (min-width: 320px) {
     font-size: 28px;
   }
-    @media (min-width: 820px) {
+  @media (min-width: 820px) {
     font-size: 30px;
   }
   @media (min-width: 1200px) {
-    font-size: 45px;
+    font-size: 35px;
+    margin-bottom: 15px;
   }
 `;
 export const List = styled.ul`

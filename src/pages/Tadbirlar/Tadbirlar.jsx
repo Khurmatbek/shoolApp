@@ -21,7 +21,10 @@ import {
 } from "./Tadbirlar.style";
 import { TadbirlarArr } from "./tadbirlar.db";
 import ParticlesComponent from "../../particles";
+import { BackButton } from "../../components/BackButton/BackButton";
+import { useNavigate } from "react-router-dom";
 const Tadbirlar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <ParticlesComponent id="particles" />
@@ -71,6 +74,7 @@ const Tadbirlar = () => {
                   );
                 })}
               </List>
+              <BackButton navigate={navigate} />
             </Wrapper>
           </div>
         </Section>
