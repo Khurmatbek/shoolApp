@@ -7,7 +7,6 @@ const EventLayout = () => {
     <SectionEvent>
       <div className="container">
         <TitleH3>
-          {" "}
           <BiNews />
           Maktabimizda bugun...
         </TitleH3>

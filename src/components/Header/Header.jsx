@@ -33,8 +33,7 @@ export const Header = ({ path }) => {
                     to={"/rahbariyat"}
                     style={{
                       opacity: path === "/rahbariyat" ? "0.6" : "1",
-                    }}
-                  >
+                    }}>
                     <GiTeacher color="#fff" />
                     Rahbariyat
                   </Links>
@@ -45,8 +44,7 @@ export const Header = ({ path }) => {
                     to={"https://t.me/emaktab_uz"}
                     style={{
                       opacity: path === "/yangiliklar" ? "0.6" : "1",
-                    }}
-                  >
+                    }}>
                     <IoNewspaper color="#fff" />
                     Yangiliklar
                   </Links>
@@ -56,8 +54,7 @@ export const Header = ({ path }) => {
                     to={"/online-lessons"}
                     style={{
                       opacity: path === "/online-lessons" ? "0.6" : "1",
-                    }}
-                  >
+                    }}>
                     <MdPlayLesson color="#fff" />
                     Online darslar
                   </Links>
@@ -76,14 +73,13 @@ export const Header = ({ path }) => {
             <li>
               <BorderLink
                 target="_blank"
-                to={"https://sinaps.uz/bilasizmi/3904/"}
-              >
+                to={"https://sinaps.uz/bilasizmi/3904/"}>
                 <RiSchoolLine color="#fff" fontSize={20} />
               </BorderLink>
             </li>
             <li>
               <LoginLink to={"/"}>
-                Log In <IoIosLogIn />
+                E-mail <IoIosLogIn />
               </LoginLink>
             </li>
           </ListHeader>

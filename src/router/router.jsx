@@ -6,8 +6,8 @@ import { TalantStudent } from "../pages/TalantStudent/TalantStudent";
 import { Coursers } from "../pages/Coursers/Coursers";
 import OnlineCourses from "../pages/onlineCourses/onlineCourses";
 import Tadbirlar from "../pages/Tadbirlar/Tadbirlar";
-/*  routes part */
-/*  routes test */
+import { SinglePageNew } from "../pages/SinglePageNew/SinglePageNew";
+
 export const router = createBrowserRouter([
   {
     path: "*",
@@ -36,6 +36,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/tadbirlar",
-    element: <Tadbirlar/>,
+    element: <Tadbirlar />,
+  },
+  {
+    path: `/future/:param`,
+    element: <SinglePageNew />,
   },
 ]);

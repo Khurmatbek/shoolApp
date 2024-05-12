@@ -8,8 +8,11 @@ import Location from "../../components/location/Location";
 import Work from "../../components/work/Work";
 import EventLayout from "../../components/events/EventLayout";
 import ApexChart from "../../components/ApexChart/ApexChart";
+import { useParams } from "react-router-dom";
 
 const Home = () => {
+  const param = useParams();
+  console.log(param);
   return (
     <>
       <Header />

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 100;
   width: 100%;
   padding: 30px 0 26.5px;
   background-color: #1d2d5b;
@@ -202,9 +202,11 @@ export const LoginLink = styled(Link)`
     width: 100%;
     height: 100%;
     border-radius: 0;
-    background-color: dodgerblue;
+    background-color: #fff;
   }
-
+  &:hover {
+    color: #1d2d5b;
+  }
   &:hover::before {
     top: 0;
   }

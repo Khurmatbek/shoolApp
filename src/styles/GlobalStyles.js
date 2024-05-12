@@ -26,7 +26,7 @@ background-color: #fafafa;
 
 }
 #root{
-  display: flex;
+display: flex;
 flex-direction: column;
 justify-content: space-between;
 width: 100%;

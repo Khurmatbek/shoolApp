@@ -19,7 +19,6 @@ const UseFull = () => {
     <WrapperBox>
       <div className="container">
         <HeadTitle>
-        
           <MdBusinessCenter fontSize={40} />
           Foydali resurslar
         </HeadTitle>

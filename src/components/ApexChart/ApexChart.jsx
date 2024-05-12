@@ -109,7 +109,7 @@ const ApexChart = () => {
       },
     },
     title: {
-      text: "Yangihayoy 8-maktab sinflar reytingi",
+      text: "Yangihayot 8-maktab sinflar reytingi",
       floating: true,
       offsetY: 330,
       align: "center",

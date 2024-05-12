@@ -104,57 +104,14 @@ export const ViewVideoLink = styled(Link)`
   width: 153px;
   padding: 8px;
   text-align: center;
-  /* color: ${(props) => props.$color || "#fff"}; */
-  color: #000;
+  color: ${(props) => props.$color || "#fff"};
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   border-radius: 0;
-  /* background-color: ${(props) => props.$bgcolor || "#1d2d5b"}; */
+  background-color: ${(props) => props.$bgcolor || "#1d2d5b"};
   border: ${(props) => props.$border || "2px solid transparent"};
-  &:hover {
-    color: #fff;
-  }
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 0.6em;
-    height: 0.6em;
-    background-color: gainsboro;
-    border-radius: 50%;
-    transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
-    top: calc(50% - 0.6em / 2);
-  }
-
-  &::before {
-    left: 0;
-    z-index: -1;
-  }
-  &::after {
-    right: 0;
-    z-index: -2;
-  }
-  position: relative;
-  transition: 0.5s;
-
-  &:hover::before,
-  &:hover::after {
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-    background-color: dodgerblue;
-  }
-
-  &:hover::before {
-    top: 0;
-  }
-
-  &:hover::after {
-    right: -0.4em;
-    filter: brightness(0.8);
-  }
 
   @media (min-width: 320px) {
     width: 130px;
