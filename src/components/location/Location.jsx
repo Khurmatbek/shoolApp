@@ -74,8 +74,7 @@ const Location = () => {
               width={"100%"}
               height={250}
               frameBorder={0}
-              onFocus={false}
-              style={{ border: 0 }}
+              style={{ border: 0 , outline:"none"}}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"></iframe>
