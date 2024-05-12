@@ -62,7 +62,7 @@ export default function Drawers() {
       <List
         sx={{
           padding: "15px",
-          height: "70vh",
+          height: "65vh",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
