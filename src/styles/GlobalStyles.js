@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
   font-family: 'Gilroy-Light';
   src: local('Gilroy-Light'), url(./fonts/Gilroy-Light.ttf) format('truetype');
 }
+
 }
 *{
   box-sizing: border-box;
@@ -24,6 +25,15 @@ font-weight: 500;
 height: 100vh;
 background-color: #fafafa;
 
+}
+iframe{
+  outline: none !important;
+}
+iframe:active{
+  border: none !important;
+}
+iframe:focus{
+  border: none !important;
 }
 #root{
 display: flex;

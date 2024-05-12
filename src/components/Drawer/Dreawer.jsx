@@ -70,7 +70,7 @@ export default function Drawers() {
         }}>
         <li>
           <Login>
-            Log In <IoIosLogIn />
+            E-mail <IoIosLogIn />
           </Login>
         </li>
       </List>
