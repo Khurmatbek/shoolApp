@@ -12,7 +12,6 @@ import { useParams } from "react-router-dom";
 
 const Home = () => {
   const param = useParams();
-  console.log(param);
   return (
     <>
       <Header />

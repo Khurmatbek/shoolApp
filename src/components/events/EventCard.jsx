@@ -14,7 +14,7 @@ const EventCard = ({ id, bg, title, date }) => {
     <WrapperEvent>
       <WrapperEventImage>
         <ImageDiv
-          background={`linear-gradient(45deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%), url(${bg})`}></ImageDiv>
+          $background={`linear-gradient(45deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.6) 100%), url(${bg})`}></ImageDiv>
         <DateSpan>{date}</DateSpan>
       </WrapperEventImage>
       <WrapperEventContent>

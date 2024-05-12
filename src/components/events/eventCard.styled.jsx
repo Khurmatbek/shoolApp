@@ -14,7 +14,7 @@ export const ImageDiv = styled.div`
   top: 0;
   right: 0;
   bottom: 0;
-  background: ${(props) => props.background};
+  background: ${(props) => props.$background};
   border-radius: 12px;
   background-size: 100%;
   transition: all 0.5s linear;

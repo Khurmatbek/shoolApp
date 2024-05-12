@@ -19,7 +19,6 @@ import { MdPlayLesson } from "react-icons/md";
 import { RiSchoolLine } from "react-icons/ri";
 import Drawers from "../Drawer/Dreawer";
 export const Header = ({ path }) => {
-  console.log(path);
   return (
     <HeaderStyle>
       <div className="container">
