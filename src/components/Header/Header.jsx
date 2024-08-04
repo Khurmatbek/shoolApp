@@ -18,13 +18,14 @@ import { IoNewspaper } from "react-icons/io5";
 import { MdPlayLesson } from "react-icons/md";
 import { RiSchoolLine } from "react-icons/ri";
 import Drawers from "../Drawer/Dreawer";
+// eslint-disable-next-line react/prop-types
 export const Header = ({ path }) => {
   return (
     <HeaderStyle>
       <div className="container">
         <WrapperIn className="wrapper">
           <WrapperIn>
-            <SiteLogo to={"/"}>8School</SiteLogo>
+            <SiteLogo to={"/"}>6School</SiteLogo>
             <Nav className="nav">
               <ListHeader>
                 <Items $left={"2px solid #fff "}>

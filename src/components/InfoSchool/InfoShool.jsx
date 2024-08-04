@@ -1,6 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+/* eslint-disable react/no-unescaped-entities */
+
 import {
   Desc,
   ImgBox,
@@ -22,8 +21,8 @@ const InfoShool = () => {
           <List>
             <Item>
               <Title>
-                Yangihayot tumani <br />
-                8-sonli umumta'lim maktabi
+                Sergeli tumani<br />
+                6-DIUO'T Maktabi
               </Title>
               <Desc>
                 Experience the joy of cooking in a whole new way with our
@@ -38,20 +37,23 @@ const InfoShool = () => {
                   width="24"
                   height="24"
                   fill="none"
-                  viewBox="0 0 24 24">
+                  viewBox="0 0 24 24"
+                >
                   <path
                     stroke="#1d2d5b"
                     strokeDasharray="4 4"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                  ></path>
                   <path
                     stroke="#1d2d5b"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    d="M10 8l6 4-6 4V8z"></path>
+                    d="M10 8l6 4-6 4V8z"
+                  ></path>
                 </svg>
                 Learn more in the COOK video
               </VideoBox>
@@ -61,7 +63,8 @@ const InfoShool = () => {
                   $color="#1d2d5b"
                   $border="2px solid #1d2d5b"
                   $bgcolor="#fff"
-                  to={"/"}>
+                  to={"/"}
+                >
                   Join Our Chefs
                 </ViewVideoLink>
               </LinkBox>

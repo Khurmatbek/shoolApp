@@ -16,7 +16,7 @@ export const Footer = () => {
     <StyledFooter>
       <StyledContainer>
         <StyledFooterWrapper>
-          <StyledLinkLogo>8School</StyledLinkLogo>
+          <StyledLinkLogo>6School</StyledLinkLogo>
           <StyledFooterInner>
             <StyledFooterListWrapper>
               <StyledSubTitle>About US</StyledSubTitle>

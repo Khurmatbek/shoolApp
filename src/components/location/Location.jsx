@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { YouTube } from "@mui/icons-material";
 import { IntagramIcon, FaceBookIcon, TwitterIcon } from "./locationIcons";
 import {
@@ -21,9 +22,9 @@ const Location = () => {
         <StyledLocationWrapper>
           <StyledLocationTwoBox>
             <StyledLocationInner>
-              <StyledLogoIcon>8School</StyledLogoIcon>
+              <StyledLogoIcon>6School</StyledLogoIcon>
               <StyledFullName>
-                Yangihayot tumani 8-sonli umumta'lim maktabi
+                Sergeli tumani 6-DIUO'T Maktabi
               </StyledFullName>
               <StyledLocationList>
                 <StyledLocationItem>

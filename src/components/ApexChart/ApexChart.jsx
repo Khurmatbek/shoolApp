@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import ReactApexChart from "react-apexcharts";
 import styled from "styled-components";
 import { GrScorecard } from "react-icons/gr";
@@ -109,7 +109,7 @@ const ApexChart = () => {
       },
     },
     title: {
-      text: "Yangihayot 8-maktab sinflar reytingi",
+      text: "Sergeli tumani 6-DIUO'TM sinflar reytingi",
       floating: true,
       offsetY: 330,
       align: "center",
